@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lifestyle product scenes</title><meta name="description" content="Photorealistic family lifestyle images with the exact product: the packshot is restored after the scene and people are generated.">
+<style>:root{--bg:#faf9f7;--fg:#161616;--muted:#5c5c5c;--line:#d9d6d0;--card:#fff;--accent:#0072b2}
+@media (prefers-color-scheme:dark){:root{--bg:#141414;--fg:#eee;--muted:#a8a8a8;--line:#333;--card:#1d1d1d;--accent:#56b4e9}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 "Helvetica Neue",Helvetica,Arial,sans-serif}
+main{max-width:1180px;margin:0 auto;padding:40px 16px 80px}h1{font-size:2.2rem;margin:0 0 .3rem}h2{font-size:1.4rem;margin:3rem 0 .4rem}
+p{max-width:820px}p.lead{color:var(--muted);font-size:1.1rem}.muted{color:var(--muted)}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
+figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+figure img{display:block;width:100%;height:auto}figcaption{padding:10px 14px 12px;font-size:.92rem}figcaption b{display:block}
+.metrics{color:var(--muted);font-size:.85rem}.wide{margin-top:14px}
+.ba{position:relative;overflow:hidden;border-radius:10px;border:1px solid var(--line);aspect-ratio:3/2;touch-action:none;cursor:ew-resize;user-select:none;max-width:1180px}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba .after{clip-path:inset(0 0 0 50%)}.ba .handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;box-shadow:0 0 6px rgba(0,0,0,.5)}
+.ba .tag{position:absolute;top:10px;padding:3px 9px;background:rgba(0,0,0,.6);color:#fff;font-size:.8rem;border-radius:4px}.ba .tag.l{left:10px}.ba .tag.r{right:10px}
+@media (max-width:560px){.grid{grid-template-columns:1fr}}li{max-width:820px}a{color:var(--accent)}footer{margin-top:4rem;color:var(--muted);font-size:.85rem}</style></head><body><main>
+<h1>Lifestyle product scenes</h1>
+<p class="lead">Family travel scenes for a baby travel cot, where the product in every image is the studio packshot and only the scene,
+the people and the light are generated. The product here is an unbranded stand-in made for this demo. Kardokh Kakabra, November 2026.</p>
+<h2>Six scenes, one product</h2><div class="grid"><figure><a href="assets/hotel.jpg"><img loading="lazy" src="assets/hotel.jpg" alt="Hotel room, morning"></a><figcaption><b>Hotel room, morning</b><span class="metrics">cot pixels from the packshot: 88%; detail similarity 0.65 (generator alone) to 0.99 (locked)</span></figcaption></figure><figure><a href="assets/garden.jpg"><img loading="lazy" src="assets/garden.jpg" alt="Garden nap in the shade"></a><figcaption><b>Garden nap in the shade</b><span class="metrics">cot pixels from the packshot: 85%; detail similarity 0.76 (generator alone) to 0.99 (locked)</span></figcaption></figure><figure><a href="assets/cottage.jpg"><img loading="lazy" src="assets/cottage.jpg" alt="Holiday cottage with grandma"></a><figcaption><b>Holiday cottage with grandma</b><span class="metrics">cot pixels from the packshot: 80%; detail similarity 0.61 (generator alone) to 0.99 (locked)</span></figcaption></figure><figure><a href="assets/terrace.jpg"><img loading="lazy" src="assets/terrace.jpg" alt="Villa terrace, golden hour"></a><figcaption><b>Villa terrace, golden hour</b><span class="metrics">cot pixels from the packshot: 81%; detail similarity 0.69 (generator alone) to 0.99 (locked)</span></figcaption></figure><figure><a href="assets/apartment.jpg"><img loading="lazy" src="assets/apartment.jpg" alt="Apartment at dusk, lamp light"></a><figcaption><b>Apartment at dusk, lamp light</b><span class="metrics">cot pixels from the packshot: 71%; detail similarity 0.75 (generator alone) to 0.98 (locked)</span></figcaption></figure><figure><a href="assets/cabin.jpg"><img loading="lazy" src="assets/cabin.jpg" alt="Lakeside cabin deck"></a><figcaption><b>Lakeside cabin deck</b><span class="metrics">cot pixels from the packshot: 87%; detail similarity 0.81 (generator alone) to 0.99 (locked)</span></figcaption></figure></div>
+<h2>Drag to compare: generator alone and with the product lock</h2>
+<p class="muted">Left: the image model added the family and redrew the cot (panels, mesh and arches drift). Right: every cot pixel that no person covers is restored from the packshot, lit by the scene.</p>
+<div class="ba"><img src="assets/before_hotel.jpg" alt="generator alone"><img class="after" src="assets/after_hotel.jpg" alt="with product lock"><div class="handle"></div><span class="tag l">Generator alone</span><span class="tag r">Product lock</span></div>
+<h2>Accuracy across a set</h2><figure class="wide"><img loading="lazy" src="assets/05_same_product_in_every_image.jpg" alt="comparison across six scenes"></figure>
+<figure class="wide"><img loading="lazy" src="assets/06_product_accuracy_step_by_step.jpg" alt="step by step"></figure>
+<h2>Formats and print</h2><figure class="wide"><img loading="lazy" src="assets/07_one_master_every_format.jpg" alt="formats"></figure>
+<p>Full-size print masters (4,752 x 3,168 px, 300 dpi): <a href="assets/02_hotel_room_print_master.jpg">hotel</a>, <a href="assets/03_garden_print_master.jpg">garden</a>, <a href="assets/04_lakeside_cabin_print_master.jpg">cabin</a>. Print-ready A4 with 3 mm bleed: <a href="assets/print_A4_bleed.pdf">PDF</a>.</p>
+<h2>How each image is made</h2><figure class="wide"><img loading="lazy" src="assets/09_how_each_image_is_made.jpg" alt="workflow"></figure>
+<ul><li>Packshot cut out with soft edges; placed at the scale set by the camera height, with a contact shadow.</li>
+<li>Family added by an open-weight image-editing model (Qwen-Image-Edit), scenes by Qwen-Image; both Apache 2.0.</li>
+<li>Product restored from the packshot: feature matching and alignment find where the model put the cot; people are found by detection and segmentation (OWLv2, SAM 2.1); a baby inside the cot stays behind the fabric and shows through the mesh.</li>
+<li>Scene light carried onto the product as a smooth brightness and colour factor; print masters upscaled (Real-ESRGAN) with the product placed again from the full-resolution packshot.</li></ul>
+<h2>Earlier work</h2><p><a href="https://kardokhk.github.io/product-visual-pipeline/">Product visual pipeline</a> (product identity, colour and prompt-match scoring) and
+<a href="https://kardokhk.github.io/construction-ai-microlearning-pilot/">a generated training film</a> with a recurring character.</p>
+<footer>All people, places and the product in these images are generated. Kardokh Kakabra, kardokhk.github.io</footer>
+</main><script>document.querySelectorAll('.ba').forEach(el=>{const a=el.querySelector('.after'),h=el.querySelector('.handle');
+const set=x=>{const r=el.getBoundingClientRect();let p=Math.min(Math.max((x-r.left)/r.width,0),1)*100;a.style.clipPath=`inset(0 0 0 ${p}%)`;h.style.left=p+'%'};
+let d=false;el.addEventListener('pointerdown',e=>{d=true;el.setPointerCapture(e.pointerId);set(e.clientX)});
+el.addEventListener('pointermove',e=>{if(d)set(e.clientX)});el.addEventListener('pointerup',()=>d=false)});</script></body></html>
